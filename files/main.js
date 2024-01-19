@@ -1,3 +1,31 @@
+let deferredPromt;
+
+window.addEventListener("beforeinstallprompt", (e)=>{
+
+    e.preventDefault();
+
+    deferredPromt = e;
+
+});
+
+document.getElementById("swBwtton").addEventListener("click", (e)=>{
+    deferredPromt.prompt();
+    console.log("prompt start");
+    deferredPromt.userChoice.then((choiceResult)=>{
+        if(choiceResult.outcome == "accepted"){
+            console.log("user accepted the A2HS prompt");
+        }
+
+        deferredPromt = null;
+
+    })
+});
+
+window.addEventListener("appinstalled",(evnt)=>{
+    app.logEvent("a2hs","installed");
+});
+
+
 /*===== MENU SHOW =====*/
 const showMenu = ( toggleId, navId ) => {
   const toggle = document.getElementById( toggleId ),
