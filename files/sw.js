@@ -65,6 +65,7 @@ window.addEventListener("beforeinstallprompt", (e)=>{
 
 document.getElementById("swBwtton").addEventListener("click", (e)=>{
     deferredPromt.prompt();
+    console.log("prompt start");
     deferredPromt.userChoice.then((choiceResult)=>{
         if(choiceResult.outcome == "accepted"){
             console.log("user accepted the A2HS prompt");
