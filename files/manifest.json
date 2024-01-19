@@ -1,0 +1,16 @@
+{
+    "name":"Utsav Gupta",
+    "short_name": "UG",
+    "icons":[
+        {
+            "src":"./files/mysql.png",
+            "sizes":"512x512",
+            "type":"image/png"
+        }
+    ],
+    "start_url":"./index.html",
+    "display":"standalone",
+    "orientation":"portrait",
+    "background_color":"#FF0000",
+    "theme_color":"#FF0000"
+}
