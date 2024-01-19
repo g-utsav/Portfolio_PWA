@@ -1,12 +1,12 @@
 
 const cacheName = "cache-v1";
 const resourcesToPrecache = [
-    "/",
-    "index.html",
-    "/files/main.js",
-    "/files/styles.css",
-    "/files/styles1.css",
-    "/files/scrollreveal.js"
+    "/Portfolio_PWA/",
+    "/Portfolio_PWA/index.html",
+    "/Portfolio_PWA/files/main.js",
+    "/Portfolio_PWA/files/styles.css",
+    "/Portfolio_PWA/files/styles1.css",
+    "/Portfolio_PWA/files/scrollreveal.js"
 ];
 
 
