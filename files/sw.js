@@ -1,7 +1,6 @@
 
 const cacheName = "cache-v1";
-const resourcesToPrecache = [
-    "/Portfolio_PWA/",
+const resourcesToPrecache = [  
     "/Portfolio_PWA/index.html",
     "/Portfolio_PWA/files/main.js",
     "/Portfolio_PWA/files/styles.css",
